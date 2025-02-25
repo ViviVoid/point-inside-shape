@@ -10,5 +10,16 @@ Input: A point, $p_i = <x_i, y_i>$, representing a 2D point and a sequence $S = 
 Output: A boolean, if the given point $p$ is inside the shape defined by the seqence $S$.
 
 ## Decision Rule Description
+To determine if a point, $p$, is inside our shape defined by the sequence $S$, we will observe how often a line casted from the point $p$ to the boundaries of the shape will intersect the shape boundaries. If this line intersects the shape's boundaries an odd number of times, the point is within the shape. Otherwise, if the line interesects the shape's boundaries and even number of times, the point is outside of the shape.
+
+### Examples
+Insert example of convex shape before submission...
+TODO
+
+![Concave shape example](concave-example.png)
+
+Observe here for both convex and concave shapes that for a given point inside the shape, a line casted t othe farthest right boundary shall intersect the shape's boundaries an odd amount of times to determine if it is inside of the shape.
+
+Similarly, points outside of the shape intersect the shape an odd amount of times when a line is casted from the point to the farthest right boundary of the shape.
 
 ## Algorithm Correctness
