@@ -1,10 +1,10 @@
 # Problem: Point Inside Shape
 
-- [ ] A statement of the computational problem you are solving
+- [x] A statement of the computational problem you are solving
 - [ ] A one-paragraph description of a “decision rule” that can be applied to solve the problem. Provide at least two
 examples illustrating how the rule is applied.
 - [x] High-level pseudocode for an algorithm that uses your rule to solve the computational problem for all inputs.
-- [ ] A 1-3 paragraph justification of why your algorithm is correct.
+- [?] A 1-3 paragraph justification of why your algorithm is correct.
 - [x] An asymptotic analysis of the worst-case run-time of your algorithm
 - [ ] A table of your test cases. For each, describe the input, the answer you would expect to get, and the answer you
 actually got.

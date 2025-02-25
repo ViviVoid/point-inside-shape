@@ -22,4 +22,10 @@ Observe here for both convex and concave shapes that for a given point inside th
 
 Similarly, points outside of the shape intersect the shape an odd amount of times when a line is casted from the point to the farthest right boundary of the shape.
 
+Here, we can observe that when the line casted from the point intersects a boundary, the line enters a new boundary and that when it intersect the boundary again, it has re-entered the shape. Therefore, if the number of intersections if odd, it implies that the line was casted from within the shape. This also implies that if the number of intersections was even, then the line was casted from outside of the shape.
+
 ## Algorithm Correctness
+<!-- Something about Jordan Curve Theorem -->
+Loop Invariant: $\forall 0 \leq j < i$, inside is true if the number of intersections for all line segments $p_j \in S$ from the given point $p$ is even or 0.
+
+Using this loop invariant, we can identify that whenever an intersection between the casted line and a line segment formed between points of a shape is found, the algorithm accounts for this being becoming true or false bsaed off its previous state. In total, the algorithm preserves the number of intersections through a boolean consistently. As such, we can identify through this algorithm in the end result if a line casted from the point to a point beyond the shape will intersect the boundaries of the shape an even or odd number of times which will identify if the point is outside of the shape or inside of the shape respectively.
